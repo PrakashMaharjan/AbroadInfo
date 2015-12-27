@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI.h>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate,UINavigationControllerDelegate>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
 
 @property (strong, nonatomic) UIWindow *window;
+@property(nonatomic,strong) IBOutlet UINavigationController *nav;
+@property(nonatomic,strong) IBOutlet UITabBarController *tabbar;
 
 
 @end

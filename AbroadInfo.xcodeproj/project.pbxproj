@@ -15,6 +15,10 @@
 		164441911BDCDACD0083BA17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1644418F1BDCDACD0083BA17 /* LaunchScreen.storyboard */; };
 		1644419C1BDCDACD0083BA17 /* AbroadInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1644419B1BDCDACD0083BA17 /* AbroadInfoTests.m */; };
 		164441A71BDCDACD0083BA17 /* AbroadInfoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 164441A61BDCDACD0083BA17 /* AbroadInfoUITests.m */; };
+		16AE64181BE0F22A00469BF5 /* SigninVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AE64171BE0F22A00469BF5 /* SigninVC.m */; };
+		16C0A39A1BDE1CE400473F3B /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C0A3991BDE1CE400473F3B /* ProfileVC.m */; };
+		16C0A39D1BDE5D6B00473F3B /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C0A39C1BDE5D6B00473F3B /* LoginVC.m */; };
+		DD38DBFAD3096B208AFEB7D6 /* libPods-AbroadInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1467D7D49D9D47A2B6A9DDD8 /* libPods-AbroadInfo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11F741A56F9B1DE901EDB4D3 /* Pods-AbroadInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbroadInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbroadInfo/Pods-AbroadInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		1467D7D49D9D47A2B6A9DDD8 /* libPods-AbroadInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AbroadInfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1644417E1BDCDACD0083BA17 /* AbroadInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbroadInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164441821BDCDACD0083BA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		164441841BDCDACD0083BA17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,13 @@
 		164441A21BDCDACD0083BA17 /* AbroadInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbroadInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164441A61BDCDACD0083BA17 /* AbroadInfoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadInfoUITests.m; sourceTree = "<group>"; };
 		164441A81BDCDACD0083BA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AE64161BE0F22A00469BF5 /* SigninVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigninVC.h; sourceTree = "<group>"; };
+		16AE64171BE0F22A00469BF5 /* SigninVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigninVC.m; sourceTree = "<group>"; };
+		16C0A3981BDE1CE400473F3B /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
+		16C0A3991BDE1CE400473F3B /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
+		16C0A39B1BDE5D6B00473F3B /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		16C0A39C1BDE5D6B00473F3B /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		5A0AB37F6E2FE98C59768CD0 /* Pods-AbroadInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbroadInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbroadInfo/Pods-AbroadInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD38DBFAD3096B208AFEB7D6 /* libPods-AbroadInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14D656D8CA4783F706AD7B2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11F741A56F9B1DE901EDB4D3 /* Pods-AbroadInfo.debug.xcconfig */,
+				5A0AB37F6E2FE98C59768CD0 /* Pods-AbroadInfo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		164441751BDCDACD0083BA17 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				1644419A1BDCDACD0083BA17 /* AbroadInfoTests */,
 				164441A51BDCDACD0083BA17 /* AbroadInfoUITests */,
 				1644417F1BDCDACD0083BA17 /* Products */,
+				14D656D8CA4783F706AD7B2B /* Pods */,
+				D6493C876A3AAD4517DCB8E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +128,14 @@
 			children = (
 				164441841BDCDACD0083BA17 /* AppDelegate.h */,
 				164441851BDCDACD0083BA17 /* AppDelegate.m */,
+				16C0A39B1BDE5D6B00473F3B /* LoginVC.h */,
+				16C0A39C1BDE5D6B00473F3B /* LoginVC.m */,
+				16AE64161BE0F22A00469BF5 /* SigninVC.h */,
+				16AE64171BE0F22A00469BF5 /* SigninVC.m */,
 				164441871BDCDACD0083BA17 /* ViewController.h */,
 				164441881BDCDACD0083BA17 /* ViewController.m */,
+				16C0A3981BDE1CE400473F3B /* ProfileVC.h */,
+				16C0A3991BDE1CE400473F3B /* ProfileVC.m */,
 				1644418A1BDCDACD0083BA17 /* Main.storyboard */,
 				1644418D1BDCDACD0083BA17 /* Assets.xcassets */,
 				1644418F1BDCDACD0083BA17 /* LaunchScreen.storyboard */,
@@ -140,6 +171,14 @@
 			path = AbroadInfoUITests;
 			sourceTree = "<group>";
 		};
+		D6493C876A3AAD4517DCB8E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1467D7D49D9D47A2B6A9DDD8 /* libPods-AbroadInfo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164441AB1BDCDACD0083BA17 /* Build configuration list for PBXNativeTarget "AbroadInfo" */;
 			buildPhases = (
+				35DE7806E272C9440FEF36A0 /* Check Pods Manifest.lock */,
 				1644417A1BDCDACD0083BA17 /* Sources */,
 				1644417B1BDCDACD0083BA17 /* Frameworks */,
 				1644417C1BDCDACD0083BA17 /* Resources */,
+				835E65964B62DC06E81DA0E2 /* Embed Pods Frameworks */,
+				E9D7D3A28F9BCBC02C9AD4CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +307,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35DE7806E272C9440FEF36A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		835E65964B62DC06E81DA0E2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AbroadInfo/Pods-AbroadInfo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D7D3A28F9BCBC02C9AD4CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AbroadInfo/Pods-AbroadInfo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1644417A1BDCDACD0083BA17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C0A39A1BDE1CE400473F3B /* ProfileVC.m in Sources */,
 				164441891BDCDACD0083BA17 /* ViewController.m in Sources */,
+				16C0A39D1BDE5D6B00473F3B /* LoginVC.m in Sources */,
 				164441861BDCDACD0083BA17 /* AppDelegate.m in Sources */,
+				16AE64181BE0F22A00469BF5 /* SigninVC.m in Sources */,
 				164441831BDCDACD0083BA17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,9 +502,11 @@
 		};
 		164441AC1BDCDACD0083BA17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F741A56F9B1DE901EDB4D3 /* Pods-AbroadInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AbroadInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GameStudios.AbroadInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +515,11 @@
 		};
 		164441AD1BDCDACD0083BA17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0AB37F6E2FE98C59768CD0 /* Pods-AbroadInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AbroadInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GameStudios.AbroadInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +593,7 @@
 				164441AD1BDCDACD0083BA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		164441AE1BDCDACD0083BA17 /* Build configuration list for PBXNativeTarget "AbroadInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +602,7 @@
 				164441B01BDCDACD0083BA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		164441B11BDCDACD0083BA17 /* Build configuration list for PBXNativeTarget "AbroadInfoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +611,7 @@
 				164441B31BDCDACD0083BA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

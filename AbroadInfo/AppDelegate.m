@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Parse enableLocalDatastore];
+    
+    
+    //step 1:
+    // Initialize Parse.
+    [Parse setApplicationId:@"6LuHFMhoYmSddw9bOwiXhwJE5vIr8YsxrfUskqLi"
+                  clientKey:@"pa7RQ62Wve2naBp2ZsbGqEDAik3aHYYyo7OFd7Qf"];
+    
+    // [Optional] Track statistics around application opens.
+   // [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+ 
+    
+    // if user is logged in, load tab bar else load login in view
+    if ([PFUser currentUser]){
+
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.tabbar=[storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
+        self.window.rootViewController=self.tabbar;
+        
+    }else
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.nav=[storyboard instantiateViewControllerWithIdentifier:@"nabbar"];
+        self.window.rootViewController=self.nav;
+    }
+    
     return YES;
 }
 
