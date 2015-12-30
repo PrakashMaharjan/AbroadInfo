@@ -8,7 +8,7 @@
 
 #import "LoginVC.h"
 #import "SigninVC.h"
-#import <Parse/Parse.h> // step 2: import parse in view where needed
+#import <Parse/Parse.h>
 @interface LoginVC ()
 
 @end
@@ -28,6 +28,16 @@
 -(void)viewWillAppear:(BOOL)animated{
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cleartextfieldsAfterlogOut) name:@"logoutNotification" object:nil];
 }
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+
 
 - (IBAction)tapOnView:(UITapGestureRecognizer *)sender {
     [self hidkeyboard];
@@ -48,6 +58,18 @@
     else{
         
         [self Login];
+        /*
+         if ([Helper validateEmail:self.usernameTxtfield.text])
+         {
+         [self Login];
+         
+         }
+         else{
+         
+         UIAlertView *emptyAlert=[[UIAlertView alloc]initWithTitle:@"Error!" message:@"Please enter correct email address." delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+         [emptyAlert show];
+         }
+         */
         
     }
     
@@ -59,18 +81,15 @@
     [self.navigationController presentViewController:signinVC animated:YES completion:nil];
 }
 
-
-//step 3 : login with parse
-
 -(void)Login{
-    
-    //parse have function to login with username and password in background.
     
     [PFUser logInWithUsernameInBackground:self.usernametxtfield.text password:self.passwordtxtfield.text block:^(PFUser *user, NSError *error)
      
      {
-         //if not error i.e login successful, load our tab bar, else display message
          if (!error) {
+              NSLog(@"user detail:%@",user);
+              NSLog(@"objectId:%@",user.objectId);
+            
              UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
              UITabBarController *obj=[storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
              self.navigationController.navigationBarHidden=YES;

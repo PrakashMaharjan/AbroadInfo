@@ -7,7 +7,7 @@
 //
 
 #import "ProfileVC.h"
-#import <Parse/Parse.h> // step 4 : import parse as we need parse log out in profile view
+#import <Parse/Parse.h>
 
 @interface ProfileVC ()
 
@@ -25,8 +25,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
 
-//step 5: When user click log out show conformation, if conformed, log out.
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 - (IBAction)LogOut:(id)sender {
     
@@ -45,8 +52,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex==1) {
-        
-        //step 6: parse log out call method to log out current user.
         [PFUser logOut];
         
         if (![PFUser currentUser]) {
